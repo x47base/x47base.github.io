@@ -629,7 +629,7 @@ background: #F33F;
   left: 20px;
   top: 50%;
   transform: translateY(-50%);
-  color: #ce8500;
+  color: var(--main-color-darker);
   font-size: 30px;
 }
 .info .msg{
@@ -642,12 +642,12 @@ background: #F33F;
   right: 0px;
   top: 50%;
   transform: translateY(-50%);
-  background: #ffd080;
+  background: var(--main-color-darker);
   padding: 20px 18px;
   cursor: pointer;
 }
 .info .close-btn:hover{
-  background: #ffc766;
+  background: var(--main-color);
 }
 .info .close-btn .fas{
   color: #ce8500;

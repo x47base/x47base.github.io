@@ -162,6 +162,19 @@ nav .menu-links li {
     transition: 0.3s;
 }
 
+nav .menu-links li .navbtn {
+    display: flex;
+    color: var(--dark-two);
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color-light);
+    border-color: var(--primary-color-light);
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-radius: 3rem;
+}
+
 nav .menu-links li a {
     color: var(--primary-color);
 }
@@ -202,8 +215,6 @@ nav .menu-links li a {
     justify-content: center;
     margin-left: 1.5rem;
 }
-
-
 
 .grid-imgs {
     display: flex;
@@ -329,6 +340,18 @@ footer .copyright p {
     color: var(--dark-two);
 }
 
+footer .powered {
+    display: flex;
+    color: var(--dark-two);
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border-color: var(--primary-color-light);
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-radius: 3rem;
+}
+
 footer .dmca {
     display: flex;
     color: var(--dark-two);
@@ -364,6 +387,42 @@ footer .dmca a {
     margin: 10px;
     padding: 0.25rem;
 }
+
+
+.sub-domain .info .pricetags {
+    display: flex;
+}
+
+.sub-domain .info .pricetags .price {
+    display: grid;
+    color: var(--dark-two);
+    padding: 1rem;
+    margin: 0.75rem;
+    align-items: center;
+    justify-content: center;
+    border-color: var(--primary-color-light);
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-radius: 2.5rem;
+    width: 10rem;
+}
+
+.sub-domain .info .pricetags .price .price-amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-domain .info .pricetags .price .price-info {
+
+}
+
+.sub-domain .info .pricetags .price .price-info .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .navbar {
     display: flex;

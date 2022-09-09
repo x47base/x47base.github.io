@@ -1,4 +1,0 @@
-This website was created with help by Youtube Videos to bether understand css.
-Credits to these Youtubers for their nice tutorials on css and html:
-- CodingLab
-- CodingNepal

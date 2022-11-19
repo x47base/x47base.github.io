@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+:root{
+    /* ===== Colors ===== */
+    --body-color: #E4E9F7;
+    --light-color: #FFF;
+    --card-color: #FFF;
+
+    --primary-color: #ff0017;/*#4e2a97;*/
+    --primary-color-lighter: #e3546a;/*#5930ac;*/
+
+    --light-one: #fff;
+    --light-two: #f9fafb;
+    --light-three: #f6f7fb;
+
+    --dark-one: #333;
+    --dark-two: #7a7a7a;
+
+    --main-color: #256590;
+    --main-color-darker: #254590;
+
+
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-me .text-data {
+    gap: 10px;
+    text-align: center;
+}
+
+.about-me ul {
+    list-style: none;
+}
+
+.about-me a {
+    text-decoration: none;
+}
+
+.about-me .skill-bars {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 25px 0;
+}
+
+.skill-bars .title {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.skill-bars .skill-per {
+    position: relative;
+    display: block;
+    height: 100%;
+    max-width: 70%;
+    border-radius: 6px;
+    background: var(--primary-color);
+    animation: progress 0.4s ease-in-out forwards;
+}
+.skill-per.python{
+    width: 70%;
+}
+.skill-per.nodejs{
+    width: 45%;
+}
+.skill-per.csharp{
+    width: 30%;
+}
+.skill-per.xamarin{
+    width: 30%;
+}
+@keyframes identifier {
+    0%{
+        width: 0;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.skill-per .tooltip {
+    color: #fff;
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 400;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: var(--primary-color);
+    z-index: 1;
+}
+
+.tooltip::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    bottom: -2px;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    background-color: var(--primary-color);
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.skill-bars .skill-bar {
+    height: 8px;
+    width: 500px;
+    border-radius: 6px;
+    background: rgba(0,0,0,0.1);
+}
+
+.image {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #ff0017;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.image .profile-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.about-me .text-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-data .name {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.text-data .job {
+    font-size: 15px;
+    font-weight: 400;
+}

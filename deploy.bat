@@ -1,4 +1,2 @@
-git init
-git checkout -b react
-git add -A
-git commit -m 'deploy'
+npm run build
+npm run deploy

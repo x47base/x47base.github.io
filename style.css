@@ -245,6 +245,18 @@ main .skillButton:hover {
     font-weight: 500;
 }
 
+.mongodb svg{
+    fill: #4DB33D;
+    width: 32px;
+    height: 32px;
+}
+
+.mongodb p{
+    color: #4DB33D;
+    margin: 0;
+    font-weight: 500;
+}
+
 .csharp svg{
     fill: #800080;
     width: 32px;

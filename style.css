@@ -257,6 +257,18 @@ main .skillButton:hover {
     font-weight: 500;
 }
 
+.xamarin svg{
+    fill: #3498db;
+    width: 32px;
+    height: 32px;
+}
+
+.xamarin p{
+    color: #3498db;
+    margin: 0;
+    font-weight: 500;
+}
+
 .html svg{
     fill: #FF6347;
     width: 32px;

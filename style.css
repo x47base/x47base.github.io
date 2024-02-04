@@ -389,6 +389,10 @@ footer .headerButton:hover {
     .classic {
         gap: 200px;
     }
+    
+    footer .socials {
+        flex-flow: wrap;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -404,10 +408,6 @@ footer .headerButton:hover {
     .workBox a {
         width: fit-content;
         margin: 0 auto;
-    }
-
-    footer .socials {
-        flex-flow: wrap;
     }
 }
 

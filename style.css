@@ -425,10 +425,13 @@ footer .headerButton:hover {
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 660px) {
     nav {
         flex-direction: column;
     }
+}
+
+@media screen and (max-width: 550px) {
 
     footer {
         display: flex;

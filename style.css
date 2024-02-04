@@ -11,6 +11,7 @@
     --blurple: #454fbf;
     --darkGrey: #333;
     --green: rgb(22, 174, 22);
+    --nav-text-color: #242424;
 }
 
 .redcolor {
@@ -25,6 +26,31 @@ body {
 }
 
 /* HEADER STYLE */
+
+nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+  
+nav .nav__bar {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+  
+nav .nav__bar .nav__link {
+    color: var(--nav-text-color);
+    padding: 0.125rem;
+    text-decoration: none;
+}
+.brand {
+    font-size: 2em;
+    font-weight: 800;
+    color: var(--darkColor);
+}
 
 .classic {
     display: flex;
@@ -48,9 +74,11 @@ body {
     transition: all 250ms;
 }
 
+/* Old Header with socials
 header .headerButton:hover {
     background-color: var(--darkWhite);
 }
+*/
 
 .classic svg {
     height: 30px;
@@ -128,6 +156,7 @@ main {
     display: flex;
     gap: 50px;
     justify-content: center;
+    align-items: center;
 }
 
 .x47base {
@@ -305,6 +334,18 @@ main .skillButton:hover {
     font-weight: 500;
 }
 
+.javascript svg{
+    fill: black;
+    width: 32px;
+    height: 32px;
+}
+
+.javascript p{
+    color: #FFCC00;
+    margin: 0;
+    font-weight: 500;
+}
+
 
 /* FOOTER STYLE */
 
@@ -385,6 +426,10 @@ footer .headerButton:hover {
 }
 
 @media screen and (max-width: 550px) {
+    nav {
+        flex-direction: column;
+    }
+
     footer {
         display: flex;
         flex-flow: wrap;

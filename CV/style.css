@@ -50,6 +50,7 @@ nav .nav__bar .nav__link {
     font-size: 2em;
     font-weight: 800;
     color: var(--darkColor);
+    text-decoration: none;
 }
 
 .classic {

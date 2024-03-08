@@ -6,7 +6,8 @@ let Informations = {
         "Nationalität"  : "Schweiz 🇨🇭, England 🇬🇧, Slowakei 🇸🇰",
         Heimatort       : "Zürich",
         "E-Mail"        : "x47base@proton.me"
-    }
+    },
+
 }
 
 function createCVItem(key, argument) {
@@ -29,5 +30,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
         let html = createCVItem(key, argument);
         cv_main.insertAdjacentHTML('beforeend', html);
     }
-
 });

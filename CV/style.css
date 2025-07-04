@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    --mainColor: #fdfdfd;
+    --darkColor: #0c1618;
+    --lightDarkColor: #132326;
+    --fontColor: #7a7a7a;
+    --darkWhite: #e8eced;
+    --linkBlue: #057afc;
+    --red: #ff0000;
+    --blurple: #454fbf;
+    --darkGrey: #333;
+    --green: rgb(22, 174, 22);
+    --nav-text-color: #242424;
+}
+
+.redcolor {
+    color: var(--red);
+}
+
+body {
+    margin: 0 auto;
+    background-color: var(--mainColor);
+    color: var(--fontColor);
+    font-family: "Poppins", sans-serif;
+}
+
+/* HEADER STYLE */
+
+nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+  
+nav .nav__bar {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+  
+nav .nav__bar .nav__link {
+    color: var(--nav-text-color);
+    padding: 0.125rem;
+    text-decoration: none;
+}
+.brand {
+    font-size: 2em;
+    font-weight: 800;
+    color: var(--darkColor);
+    text-decoration: none;
+}
+
+.classic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 505px;
+    margin-bottom: 100px;
+}
+
+.headerButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 250ms;
+}
+
+/* Old Header with socials
+header .headerButton:hover {
+    background-color: var(--darkWhite);
+}
+*/
+
+.classic svg {
+    height: 30px;
+    width: 30px;
+}
+
+.contact svg {
+    fill: var(--linkBlue);
+    width: 30px;
+    height: 30px;
+}
+
+.contact p {
+    color: var(--linkBlue);
+    margin: 0;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.youtube svg {
+    fill: var(--red);
+    width: 30px;
+    height: 30px;
+}
+
+.youtube p {
+    color: var(--red);
+    margin: 0;
+}
+
+.twitter svg {
+    fill: var(--linkBlue);
+    width: 30px;
+    height: 30px;
+}
+
+.twitter p {
+    color: var(--linkBlue);
+    margin: 0;
+}
+
+.github svg {
+    fill: var(--darkGrey);
+    width: 30px;
+    height: 30px;
+}
+
+.github p {
+    color: var(--darkGrey);
+    margin: 0;
+}
+
+.discord svg {
+    fill: var(--blurple);
+    width: 30px;
+    height: 30px;
+}
+
+.discord p {
+    color: var(--blurple);
+    margin: 0;
+}
+
+.title {
+    color: var(--darkColor);
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--darkColor);
+}
+
+/* MAIN STYLE */
+main {
+    padding: 2em;
+}
+
+.top {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv-container {
+    display: grid;
+}
+
+.cv-container h1 {
+    color: var(--darkColor);
+    font-size: 40px;
+}
+
+.cv-container p {
+    max-width: 550px;
+    font-size: 20px;
+}
+
+.cv-container ul {
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+}
+
+.cv-container li {
+    margin-bottom: 2.5px;
+}
+
+.cv-container .cv-item {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 2fr;
+}
+
+.cv-item .item-x {
+    font-weight: 600;
+}
+
+.cv-item .item-y {
+    font-weight: 400;
+}
+
+.CVImage img {
+    max-width: 150px;
+    border-radius: 2.5%;
+}
+
+.skills {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+}
+
+.skills h1{
+    color: var(--darkColor);
+    text-align: center;
+}
+
+.skills .skill-container{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 700px;
+}
+
+.skillButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 250ms;
+}
+
+main .skillButton:hover {
+    background-color: var(--darkWhite);
+}
+
+.python svg {
+    fill: rgba(55,118,171,1.00);
+    width: 30px;
+    height: 30px;
+}
+
+.python p {
+    color: rgba(55,118,171,1.00);
+    margin: 0;
+    font-weight: 500;
+}
+
+.nodejs svg {
+    fill: #68a063;
+    width: 32px;
+    height: 32px;
+}
+
+.nodejs p {
+    color: #68a063;
+    margin: 0;
+    font-weight: 500;
+}
+
+.lua svg{
+    fill: #000080;
+    width: 32px;
+    height: 32px;
+}
+
+.lua p {
+    color: #000080;
+    margin: 0;
+    font-weight: 500;
+}
+
+.mysql svg{
+    fill: #00758F;
+    width: 32px;
+    height: 32px;
+}
+
+.mysql p{
+    color: #00758F;
+    margin: 0;
+    font-weight: 500;
+}
+
+.mongodb svg{
+    fill: #4DB33D;
+    width: 32px;
+    height: 32px;
+}
+
+.mongodb p{
+    color: #4DB33D;
+    margin: 0;
+    font-weight: 500;
+}
+
+.csharp svg{
+    fill: #800080;
+    width: 32px;
+    height: 32px;
+}
+
+.csharp p{
+    color: #800080;
+    margin: 0;
+    font-weight: 500;
+}
+
+.xamarin img{
+    fill: #3498db;
+    width: 32px;
+    height: 32px;
+}
+
+.xamarin p{
+    color: #3498db;
+    margin: 0;
+    font-weight: 500;
+}
+
+.html svg{
+    fill: #FF6347;
+    width: 32px;
+    height: 32px;
+}
+
+.html p{
+    color: #FF6347;
+    margin: 0;
+    font-weight: 500;
+}
+
+.css svg{
+    fill: #0000ff;
+    width: 32px;
+    height: 32px;
+}
+
+.css p{
+    color: #0000ff;
+    margin: 0;
+    font-weight: 500;
+}
+
+.javascript svg{
+    fill: black;
+    width: 32px;
+    height: 32px;
+}
+
+.javascript p{
+    color: #FFCC00;
+    margin: 0;
+    font-weight: 500;
+}
+
+
+/* FOOTER STYLE */
+
+footer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 100px;
+    margin-top: 100px;
+    background-color: var(--darkColor);
+}
+
+footer p {
+    text-align: center;
+    color: #afb3b4;
+}
+
+footer .headerButton:hover {
+    background-color: var(--lightDarkColor);
+}
+
+
+@media screen and (max-width: 1200px) {
+    .classic {
+        gap: 500px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .classic {
+        gap: 300px;
+    }
+
+    .top {
+        flex-flow: wrap;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .classic {
+        gap: 200px;
+    }
+    
+    footer .socials {
+        flex-flow: wrap;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .classic {
+        gap: 50px;
+    }
+
+    .workBox img {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .workBox a {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .top {
+        flex-flow: column;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .classic {
+        display: none;
+    }
+
+    .mobileMenuButtonContainer {
+        display: flex;
+    }
+
+    main {
+        padding-top: 0;
+    }
+
+    .top {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .top .cv-container {
+        grid-template-columns: none;
+    }
+
+    .top .cv-container .cv-item {
+        display: flex;
+        flex-flow: column;
+        gap: 0px;
+        padding-bottom: .25rem;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    nav {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    footer {
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    .workBox img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .workBox a {
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
